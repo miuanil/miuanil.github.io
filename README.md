@@ -1,2 +1,2 @@
-# miuanil.github.io
-WAP AssignmentS
+# cs472
+WAP Assignments
