@@ -106,7 +106,7 @@ div.miu-classes ol li span {
     font-size: 19px;
 }
 
-.favorite-movies ol li:first-letter {
+.drop-caps:first-letter {
     font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
     float: left;
     font-size: 20px;
@@ -114,9 +114,27 @@ div.miu-classes ol li span {
 
   }
 
+.favorite-movies ol {
+    transform: rotate(180deg);
+}
+
+.favorite-movies ol > li {
+    transform: rotate(-180deg);
+}
+
 .favorite-movies ol li a {
     text-decoration: none;
     color: #333;
+}
+
+.favorite-movies ol li.drop-caps ul li {
+    color: #989800;
+    font-weight: bold;
+}
+
+.favorite-movies ol li.drop-caps ul li ul li {
+    color: #333;
+    font-weight: normal;
 }
 
 .favorite-movies ol li a:hover {
