@@ -7,6 +7,7 @@ body {
     font-size: 11pt;
     color: #404040;
     font-family: Georgia, serif;
+    background-image: url("../images/silverware.jpg");
 }
 
 a {
@@ -25,6 +26,7 @@ header h1 {
     font-weight: bold;
     font-size: 22pt;
     text-align: center;
+    letter-spacing: 0.25em;
 }
 
 div.pie-recipe ul {
@@ -38,6 +40,11 @@ div.pie-recipe ul {
     text-decoration: underline;
     color: #A4A400;
     background-color: #F0F0F0;
+    letter-spacing: 0.25em;
+}
+
+.ingredients ul {
+    list-style-image: url("../images/pie_bullet.png");
 }
 
 .ingredients ul[li*="tbsp"] {
@@ -86,7 +93,6 @@ footer {
     margin-top: 1em;
 }
 
-
 footer .copyright {
     float: right;
     width: 100%;
@@ -105,4 +111,8 @@ footer .validations a {
 
 footer .validations a:nth-child(2) {
     margin-left: 10px;
+}
+
+.directions ol li ul {
+    list-style-image: url("../images/pie_bullet.png");
 }
