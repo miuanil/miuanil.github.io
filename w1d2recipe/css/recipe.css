@@ -1,0 +1,108 @@
+html,
+body {
+    /* margin: 0; */
+    /* padding: 0; */
+    height: 100%;
+    background-color: #fff;
+    font-size: 11pt;
+    color: #404040;
+    font-family: Georgia, serif;
+}
+
+a {
+    color: #A4A400;
+    display: block;
+}
+
+header {
+    background-color: #F0F0F0;
+}
+
+header h1 {
+    color: #A4A400;
+    text-decoration: underline;
+    font-family: 'Lucida Sans Unicode', sans-serif;
+    font-weight: bold;
+    font-size: 22pt;
+    text-align: center;
+}
+
+div.pie-recipe ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.title {
+    font-size: 18pt;
+    text-decoration: underline;
+    color: #A4A400;
+    background-color: #F0F0F0;
+}
+
+.ingredients ul[li*="tbsp"] {
+    color: #404040;
+    font-size: 20px;
+}
+
+span.tbsp,
+span.tsp {
+    text-decoration: underline;
+}
+
+.tbsp::after {
+    content: "tbsp";
+}
+
+.tbsp:hover::after {
+    content: "tablespoons";
+}
+
+.tsp::after {
+    content: "tsp";
+}
+
+.tsp:hover::after {
+    content: "teaspoon";
+}
+
+.strike-out {
+    text-decoration: line-through;
+}
+
+.comment {
+    background-color: #FFFFA8;
+    padding: 5px;
+    margin: 30px;
+    font-style: italic;
+}
+
+.comment p {
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    margin-top: 1em;
+}
+
+
+footer .copyright {
+    float: right;
+    width: 100%;
+}
+
+footer .copyright span {
+    float: right;
+    text-align: left;
+    font-family: monospace;
+}
+
+footer .validations a {
+    float: right;
+    clear: none;
+}
+
+footer .validations a:nth-child(2) {
+    margin-left: 10px;
+}
