@@ -92,7 +92,7 @@ footer .copyright {
     width: 100%;
 }
 
-footer .copyright span {
+footer .copyright pre {
     float: right;
     text-align: left;
     font-family: monospace;
