@@ -79,11 +79,11 @@ div.title p b {
     font-style: italic;
 }
 
-section.miu-classes ol li {
+div.miu-classes ol li {
     list-style: decimal-leading-zero;
 }
 
-section.miu-classes ol li span {
+div.miu-classes ol li span {
     font-size: 13px;
     font-style: italic;
 }
@@ -146,6 +146,7 @@ section.miu-classes ol li span {
 
 .a-title h1, .favorite-movies h1, .my-moods h1, .neighbor h1 {
     text-align: left;
+    font-size: 1.5em;
     font-family: 'Silkscreen', cursive;
     text-decoration: underline;
 }
