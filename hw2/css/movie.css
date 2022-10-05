@@ -1,0 +1,136 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("../images/background.png");
+    font-size: 8pt;
+    font-family: Verdana, sans-serif;
+}
+
+.banner {
+    display: block;
+    margin: 0 auto;
+    background-image: url("../images/bannerbg.png");
+    width: 100%;
+    text-align: center;
+}
+
+h1.movie-title {
+    font-size: 24pt;
+    font-weight: bold;
+    text-align: center;
+    font-family: Tahoma, sans-serif;
+    text-shadow: 3px 3px #999999;
+}
+
+.wrapper {
+    width: 800px;
+    border: 4px solid #808080;
+    margin: 0 auto;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.rotten-big {
+    background-image: url("../images/rbg.png");
+    width: 100%;
+    font-size: 48pt;
+    color: #ff0000;
+    font-weight: bold;
+    margin: 0;
+}
+
+.rotten-big img {
+    vertical-align: bottom;
+}
+
+.left-section {
+    float: left;
+    width: 550px;
+}
+
+.review {
+    float: left;
+    width: 47%;
+    margin-left: 2%;
+}
+
+.review q {
+    font-size: 8pt;
+    font-weight: bold;
+}
+
+.review p img {
+    float: left;
+    margin-right: 5px;
+
+}
+
+.review p:nth-child(odd) {
+    background-color: #E8DC9B;
+    border: 2px solid #808080;
+    border-radius: 10px;
+    padding: 8px;
+    overflow: hidden;
+}
+
+.review p:nth-child(even) {
+    margin-bottom: 20pt;
+    font-style: italic;
+}
+
+.review p:nth-child(even) img {
+    float: left;
+    margin-right: 5px;
+}
+
+.right-section {
+    float: right;
+    width: 250px;
+    background-color: #A2B964;
+}
+
+.right-section dl dt {
+    padding-left: 10pt;
+}
+
+.right-section dl {
+    font-size: 8pt;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.right-section dl dt {
+
+    font-weight: bold;
+    margin-top: 10pt;
+}
+
+.right-section dl dd ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.bottom-bar {
+    background-color: #A2B964;
+    position: absolute;
+    bottom: 0;
+    padding: 5px;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+}
+
+.validators {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
+
+.validators img {
+    opacity: 50%;
+}
