@@ -36,7 +36,7 @@ console.log("Expected output of maxOfThree(55,4,44) is 55  " + myFunctionTest(4,
 function isVowel(a) {
     let vovels = ['a', 'e', 'i', 'o', 'u'];
     if (a.length != 1) return false;
-    return vovels.find(function (element) { return element == a }) !== undefined;
+    return vovels.find(function (element) { return element == a.toLowerCase() }) !== undefined;
 }
 
 console.log("\n");
