@@ -1,10 +1,9 @@
-.labs  {
+.labs {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    /* background-color: #333; */
-  }
+}
 
 .labs ul li a {
     display: block;
@@ -18,4 +17,34 @@
 .labs ul li a:hover {
     background-color: #333;
     color: #fff;
+}
+
+nav.navbar {
+    background-color: #31a5e8;
+}
+
+.navbar-brand {
+    color: #fff;
+}
+
+.nav-link {
+    color: #d5ebf9;
+    border-left: 1px solid #fff;
+}
+
+.title {
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+#buttons button {
+    margin-left: 15px;
+}
+
+
+#validate {
+    position: fixed;
+    bottom: 0;
+    right: 0;
 }
