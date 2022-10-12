@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object and Modules</title>
+</head>
+<body>
+    
+    <pre>
+=================================== 1 ===================================
+
+const count = (function() {
+ let counter = 0;
+
+ return {
+  add: function() {
+   counter += 1;
+  },
+  reset: function() {
+   counter = 0;
+  }
+ }
+})();
+
+=================================== 2 ===================================
+Free variable is the 'counter'.
+Free variables are simply variables that are neither locally declared nor passed as parameters. These variables are also accessible in the current scope.
+=================================== 3 ===================================
+
+const make_adder = (function(inc) {
+ let counter = 0;
+
+ return function() {
+  counter += inc;
+  return counter;
+ }
+});
+
+=================================== 4 ===================================
+I can implement the IIFE Module pattern.
+=================================== 5 ===================================
+
+const Employee = (function () {
+ let name;
+ let age;
+ let salary;
+
+ const getName = function () {
+  return name;
+ };
+
+ const getAge = function () {
+  return age;
+ };
+
+ const getSalary = function () {
+  return salary;
+ };
+
+ return {
+  setName: function (nameParam) {
+   name = nameParam;
+  },
+  setAge: function (ageParam) {
+   age = ageParam;
+  },
+  setSalary: function (salaryParam) {
+   salary = salaryParam;
+  },
+  increaseSalary: function (percentage) {
+   salary += (getSalary() * percentage) / 100;
+  },
+  incrementAge: function () {
+   age = getAge() + 1;
+  }
+ };
+})();
+
+=================================== 6 ===================================
+
+// Employee.address;
+
+Employee.setAddress = function(addressParam) {
+ // this.address = addressParam;
+ Employee.address = addressParam;
+};
+
+Employee.getAddress = function() {
+ // return this.address;
+ return Employee.address;
+};
+
+
+// I have 2 different ways to implement this. I can uncomment the commented lines and vice versa.
+
+    </pre>
+
+    <script>
+
+        const count = (function() {
+            let counter = 0;
+
+            return {
+                add: function() {
+                    counter += 1;
+                },
+                reset: function() {
+                    counter = 0;
+                },
+                for_test: function() {
+                    return counter;
+                }
+            }
+        })();
+
+        count.add();
+        console.log("count.add() invoked.")
+        count.add();
+        console.log("count.add() invoked.")
+        console.log("prints counter")
+        console.log(count.for_test());
+        console.log("count.reset() invoked.")
+        console.log(count.reset());
+        console.log("prints counter")
+        console.log(count.for_test());
+
+    </script>
+</body>
+</html>
