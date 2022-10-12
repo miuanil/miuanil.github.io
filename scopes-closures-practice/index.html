@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W2D2 - Scopes, Closures Practice</title>
+</head>
+<body>
+    <pre>
+1) 
+
+undefined (line 5) = JS assumes the x is a new global value and it's undefined.
+8 (line 6) = It pass 8 as value on line 17.
+8 (line 9) = It changes the b's value to a's value. So, it prints 8.
+9 (line 14) = It gets the function 'b' value which is 9 (It is not a variable actually it is a function parameter). 
+10 (line 18) = It gets the value from line 3.
+1 (line 19) = It gets the value from line 1.
+ 
+
+2) Global Scope: The variables are declared globally from outside of any functions and these variables can be accessed from anywhere. But the Local scope can only be accessed from within the function.
+
+ 
+
+3) B, D, and E are the correct answers. Because the current scope does not look at the inner scope. It always checks the previous one until goes to the global scope.
+
+ 
+
+4) 
+
+81 (Line 5)  = The function checks its own scope and doesn't find the x variable then it goes to the previous scope which is the global scope then gets the x value 9 on line 1.
+25 (Line 7)  = X is value changed on line 6. Then the function gets the x value as 5.
+ 
+
+5) The result is 10. Because the foo variable is declared on line 4 (in an if scope), before line 3 (if condition) js assumes that foo is a global variable and acts like the value is undefined. When we use the ! operator to the undefined value it will convert it to the TRUE value. Then the if condition executes and the value of foo will be 10.  If it wouldn't be declared there using var keyword, the result would be 1, and the !1 would equal the false, then this block will never execute.
+    </pre>
+</body>
+</html>
