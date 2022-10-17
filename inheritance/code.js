@@ -65,8 +65,6 @@ var michaelZijlstra = new Teacher();
 michaelZijlstra.initialize("Michael Zijlstra")
 console.log(michaelZijlstra.teach("WAP"));
 
-
-// Examples..
 console.log("\n\n");
 
 console.log("Example: String.prototype.filter() - Argument: 'not'")
