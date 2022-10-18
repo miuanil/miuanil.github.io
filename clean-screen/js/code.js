@@ -68,7 +68,6 @@ $(function () {
      * @param number growthAmount 
      */
     function changeWide(selector, growthAmount) {
-        console.log("x")
         selector.css({
             "width": parseInt(selector.css("width")) + parseInt(growthAmount) + "px",
             "height": parseInt(selector.css("height")) + parseInt(growthAmount) + "px",
@@ -123,5 +122,4 @@ $(function () {
             numberOfCirclesInput: $("input[name='number_of_circles']").val(), // Number of Circles Input.
         }
     }
-
 });
