@@ -1,0 +1,31 @@
+.forms {
+    position:absolute;
+	bottom:1%;
+	left: 1%;
+	width:auto!important;
+}
+
+label {
+    display: block;
+    line-height: 25px;
+}
+
+input[type="number"] {
+    display: block;
+}
+
+input[type="button"] {
+    margin-top: 10%;
+}
+
+.circle {
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.half_opacity {
+    opacity: 0.5;
+}
