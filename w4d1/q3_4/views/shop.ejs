@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title><%= pageTitle %></title>
+        <link rel="stylesheet" href="<%= bootstrapCDN %>">
+        <style>a {text-decoration: none; color: unset;}</style>
+    </head>
+    <body>
+        <section style="background-color: #eee;">
+            <div class="container py-5">
+                <div class="row">
+                    <% for (const product of products) { %>
+                        <div class="col-md-12 col-lg-4 mb-4 mb-lg-0 mt-4">
+                            <a href="/product/<%= product.id %>">
+                                <div class="card">
+                                    <img 
+                                        src="<%= product.image %>" 
+                                        class="card-img-top" 
+                                        alt="<%= product.name %>"
+                                    >
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between mb-3">
+                                            <h5 class="mb-0">
+                                                <%= product.name %>
+                                            </h5>
+                                            <h5 class="text-dark mb-0">
+                                                $<%= product.price.toFixed(2) %>
+                                            </h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    <% } %>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
