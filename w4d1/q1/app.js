@@ -11,9 +11,6 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 
 app.get('/', (req, res, next) => {
-
-    console.log(req.cookies)
-
     res.render('form', {
         pageTitle: 'Cookie Form',
         bootstrapCDN: 'https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css',
