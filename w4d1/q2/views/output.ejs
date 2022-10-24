@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= pageTitle %></title>
+    <link rel="stylesheet" href="<%= bootstrapCDN %>">
+    <link rel="stylesheet" href="css/<%= cssFile %>">
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col mt-2">
+                <a href="/" class="btn btn-primary float-end">Go Back</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6 mx-auto m-4">
+                <h3 class="title">
+                    Welcome <%= name %>. Your age is <%= age %>
+                </h3>
+                <small class="text-muted">Using Session</small>
+            </div>
+        </div>
+    </div>    
+</body>
+</html>
