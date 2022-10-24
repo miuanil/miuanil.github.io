@@ -59,9 +59,7 @@ exports.addToCart = (req, res, next) => {
 };
 
 exports.getCart = (req, res, next) => {
-
-    console.log(req.session.cart);
-
+    
     let total = 0;
     let itemT = 0;
     for (key in req.session.cart) {
