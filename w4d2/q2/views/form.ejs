@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= pageTitle %></title>
+    <link rel="stylesheet" href="<%= bootstrapCDN %>">
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-6 mx-auto">
+                    <div class="form-group m-3">
+                        <label for="question" class="form-label">Question:</label>
+                        <input type="text" class="form-control" name="question" id="question" required>
+                        <small class="text-muted">Press enter</small>
+                    </div>
+                    
+                    <div class="alert alert-danger m-3" id="alert" role="alert" style="display: none;"></div>
+                    <!-- <button class="btn btn-info float-end text-white m-3">Ask 8 Ball</button> -->
+            </div>
+        </div>
+    </div>
+    
+    <script src="<%= jqueryCDN %>"></script>
+    <script src="/js/custom.js"></script>
+</body>
+</html>
