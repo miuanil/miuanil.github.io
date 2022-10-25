@@ -1,0 +1,52 @@
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+.cartBasket {
+    position: fixed;
+    right: 1%;
+    top: 1%;
+    padding: 35px;
+    z-index: 99999;
+}
+
+.cartBasket a {
+    text-decoration: none !important;
+}
+
+.cartBasket a i:hover {
+    color: #7066e0;
+}
+
+.cartBasket i {
+    font-size: 25px;
+    color: #000000;
+
+}
+
+.cartBasket .badge {
+    padding-left: 9px;
+    padding-right: 9px;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    border-radius: 9px;
+}
+
+.cartBasket .label-warning[href],
+.cartBasket .badge-warning[href] {
+    background-color: #c67605;
+}
+
+.cartBasket #labelCartCount {
+    font-size: 12px;
+    background: #ff0000;
+    color: #fff;
+    padding: 0 5px;
+    vertical-align: top;
+    margin-left: -10px;
+}
+
+.goToTheCart {
+    font-weight: bold;
+}

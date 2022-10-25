@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= pageTitle %></title>
+    <link rel="stylesheet" href="<%= faCDN %>">
+    <link rel="stylesheet" href="<%= bootstrapCDN %>">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <%- include('layouts/cart') %>
+    <div class="container mt-5 mb-5">
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-10">
+                <div class="card">
+                    <div class="card-title">
+                        <a href="<%= homePagePath %>" class="btn btn-warning m-2 text-uppercase text-white">
+                            Homepage
+                        </a>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="images p-3">
+                                <div class="text-center p-4">
+                                    <img id="main-image" src="<%= product.image %>" width="250">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="product p-4">
+                                <div class="mt-4 mb-3">
+                                    <h5 class="text-uppercase"><%= product.name %></h5>
+                                    <div class="price d-flex flex-row align-items-center"> 
+                                        <span class="act-price">$<%= product.price.toFixed(2) %></span>
+                                    </div>
+                                </div>
+                                <p class="about"><%= product.detail %></p>
+                                <div class="cart mt-4 align-items-center">
+                                    <input type="hidden" name="id" value="<%= product.id %>">
+                                    <input type="hidden" name="name" value="<%= product.name %>">
+                                    <input type="hidden" name="price" value="<%= product.price %>">
+                                    <button id="add" class="btn btn-info text-uppercase mr-2 mb-4 px-4 text-white float-end">Add to cart</button> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="<%= jqueryCDN %>"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="/js/custom.js"></script>
+</body>
+</html>
