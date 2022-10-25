@@ -24,6 +24,9 @@
                                         alt="<%= product.name %>"
                                     >
                                     <div class="card-body">
+                                        <input type="hidden" name="name" value="<%= product.id %>">
+                                        <input type="hidden" name="name" value="<%= product.name %>">
+                                        <input type="hidden" name="name" value="<%= product.price %>">
                                         <div class="d-flex justify-content-between mb-3">
                                             <h5 class="mb-0">
                                                 <%= product.name %>
@@ -32,6 +35,11 @@
                                                 $<%= product.price.toFixed(2) %>
                                             </h5>
                                         </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <button id="add" class="btn btn-sm btn-info text-white float-end">
+                                            <i class="fa fa-add"></i> Add to Cart
+                                        </button>
                                     </div>
                                 </div>
                             </a>
@@ -42,6 +50,7 @@
         </section>
 
         <script src="<%= jqueryCDN %>"></script>
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
         <script src="/js/custom.js"></script>
     </body>
 </html>
